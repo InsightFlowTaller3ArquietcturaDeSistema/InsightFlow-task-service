@@ -23,7 +23,7 @@ import io.swagger.v3.oas.annotations.servers.Server;
 	),
 	servers = {
 		@Server(url = "http://localhost:8080", description = "Servidor local"),
-		@Server(url = "https://insightflow-tasks.onrender.com", description = "Servidor de producción")
+		@Server(url = "https://task-service-5dmf.onrender.com", description = "Servidor de producción")
 	}
 )
 public class TasksServiceApplication {

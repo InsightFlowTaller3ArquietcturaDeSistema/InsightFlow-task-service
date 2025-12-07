@@ -13,7 +13,12 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:8080", "http://insightflow-frontend-39727.firebaseapp.com", "insightflow-frontend-39727.web.app", "https://task-service-5dmf.onrender.com", "task-service-5dmf.onrender.com")
+                        .allowedOriginPatterns(
+                                "http://localhost:8080",
+                                "http://localhost:3000",
+                                "https://insightflow-frontend-39727.firebaseapp.com",
+                                "https://insightflow-frontend-39727.web.app"
+                        )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
                         .allowedHeaders("*")
                         .allowCredentials(true);
