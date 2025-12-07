@@ -24,4 +24,4 @@ jobs:
       with:
         context: "{{defaultContext }}"
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/tasks-service:latest, ${{secrets.DOCKERHUB_USERNAME}}/tasks-service:${{github.sha}}
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/task-service:latest, ${{secrets.DOCKERHUB_USERNAME}}/task-service:${{github.sha}}
