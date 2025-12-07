@@ -24,7 +24,7 @@ import java.time.LocalDateTime;
 @RequestMapping("/api/tasks")
 @RequiredArgsConstructor
 @Tag(name = "Tasks", description = "Endpoints para la gestión de tareas")
-@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "*")
 public class TaskController {
     private final TaskService taskService;
 
