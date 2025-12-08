@@ -6,7 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
+/**
+ * Entidad que representa una tarea en el sistema.
+ */
 
 @Data
 @Builder

@@ -15,7 +15,7 @@ public class CorsConfig {
                 registry.addMapping("/**")
                         .allowedOriginPatterns(
                                 "http://localhost:8080",
-                                "http://localhost:3000",
+                                "http://localhost:5173",
                                 "https://insightflow-frontend-39727.firebaseapp.com",
                                 "https://insightflow-frontend-39727.web.app"
                         )

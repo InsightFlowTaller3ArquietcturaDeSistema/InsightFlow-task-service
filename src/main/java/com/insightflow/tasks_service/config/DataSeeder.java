@@ -29,14 +29,13 @@ public class DataSeeder implements CommandLineRunner {
         log.info("Total de tareas sembradas: {}", taskRepository.count());
     }
     private void createSampleTasks() {
-        String doc1 = UUID.randomUUID().toString();
-        String doc2 = UUID.randomUUID().toString();
-        String doc3 = UUID.randomUUID().toString();
-        String user1 = UUID.randomUUID().toString();
-        String user2 = UUID.randomUUID().toString();
-        String user3 = UUID.randomUUID().toString();
+        String doc1 = "doc-001";
+        String doc2 = "doc-002";
+        String doc3 = "doc-003";
+        String user1 = "user-001";
+        String user2 = "user-002";
+        String user3 = "user-003";
         
-
         Task task1 = Task.builder()
                 .id(UUID.randomUUID().toString())
                 .documentId(doc1)
